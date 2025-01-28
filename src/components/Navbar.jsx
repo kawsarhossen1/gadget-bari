@@ -1,9 +1,12 @@
+import { CiShoppingCart, CiHeart } from "react-icons/ci";
+
+
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar md:px-8 mt-8 text-white bg-[#9538E2]">
       <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+        <div className="dropdown ">
+          <div tabIndex={0} role="button" className="mx-4 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -21,54 +24,47 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black"
           >
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
+            </li>
+            
+            <li>
+              <a>Statistics</a>
+            </li>
+            
+            <li>
+              <a>Dashboard</a>
             </li>
             <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
+              <a>New Arrival</a>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className=" text-xl">Gadget Bari</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
+        <li>
+              <a>Home</a>
+            </li>
+            
+            <li>
+              <a>Statistics</a>
+            </li>
+            
+            <li>
+              <a>Dashboard</a>
+            </li>
+            <li>
+              <a>New Arrival</a>
+            </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4">
+        <a className="bg-white rounded-full p-2 text-black  border-[#0b0b0b1a] "><CiShoppingCart /></a>
+        <a className="bg-white rounded-full p-2 text-black border-[#0b0b0b1a] "><CiHeart /></a>
       </div>
     </div>
   );
