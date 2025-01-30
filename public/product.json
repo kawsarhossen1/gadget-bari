@@ -1,0 +1,321 @@
+{
+  "products": [
+    {
+      "product_id": 1,
+      "product_title": "Samsung Galaxy S23",
+      "product_image": "https://i.ibb.co.com/9vzHrsT/Mobile-1.jpg",
+      "category": "Mobile",
+      "price": 849,
+      "description": "A high-performance smartphone with dynamic AMOLED display and powerful processor.",
+      "specification": [
+        "256GB Storage",
+        "6.2-inch AMOLED Display",
+        "Triple Rear Camera"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 2,
+      "product_title": "Google Pixel 7",
+      "product_image": "https://i.ibb.co.com/5GHCXnt/Mobile-2.jpg",
+      "category": "Mobile",
+      "price": 799,
+      "description": "A smartphone with amazing camera and smooth performance.",
+      "specification": [
+        "128GB Storage",
+        "6.3-inch OLED Display",
+        "Tensor G2 Chip"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 3,
+      "product_title": "OnePlus 11",
+      "product_image": "https://i.ibb.co.com/Hxk7X2K/Mobile-3.jpg",
+      "category": "Mobile",
+      "price": 729,
+      "description": "A flagship smartphone with cutting-edge performance.",
+      "specification": [
+        "Snapdragon 8 Gen 2",
+        "6.7-inch AMOLED",
+        "5000mAh Battery"
+      ],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 4,
+      "product_title": "Xiaomi 13 Pro",
+      "product_image": "https://i.ibb.co.com/3WgG8kB/Mobile-4.jpg",
+      "category": "Mobile",
+      "price": 699,
+      "description": "A feature-packed smartphone with an impressive camera setup.",
+      "specification": ["12GB RAM", "6.73-inch AMOLED", "120W Fast Charging"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 5,
+      "product_title": "Dell XPS 13",
+      "product_image": "https://i.ibb.co.com/qr9YrZf/laptop-1.jpg",
+      "category": "Laptop",
+      "price": 1200,
+      "description": "A lightweight and powerful laptop for professionals.",
+      "specification": ["11th Gen Intel i7", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 6,
+      "product_title": "HP Spectre x360",
+      "product_image": "https://i.ibb.co.com/h2jDvrx/laptop-2.jpg",
+      "category": "Laptop",
+      "price": 1499,
+      "description": "A versatile 2-in-1 laptop with a stunning design and powerful features.",
+      "specification": ["Intel i7 Processor", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 7,
+      "product_title": "Asus ROG Zephyrus G14",
+      "product_image": "https://i.ibb.co.com/XJwQkJf/laptop-3.jpg",
+      "category": "Laptop",
+      "price": 1599,
+      "description": "A gaming laptop with powerful specs and sleek design.",
+      "specification": ["AMD Ryzen 9", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 8,
+      "product_title": "Lenovo ThinkPad X1 Carbon",
+      "product_image": "https://i.ibb.co.com/MsmR5fq/laptop-4.jpg",
+      "category": "Laptop",
+      "price": 1499,
+      "description": "A lightweight and robust laptop designed for business professionals.",
+      "specification": ["12th Gen Intel Core", "16GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 9,
+      "product_title": "Apple Watch Series 8",
+      "product_image": "https://i.ibb.co.com/3dPkHsd/smart-watch-1.jpg",
+      "category": "Smart Watch",
+      "price": 399,
+      "description": "Advanced health monitoring and fitness features in a sleek design.",
+      "specification": ["Always-on Display", "ECG App", "Blood Oxygen Sensor"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 10,
+      "product_title": "Samsung Galaxy Watch 5",
+      "product_image": "https://i.ibb.co.com/j5QWbnv/smart-watch-1.png",
+      "category": "Smart Watch",
+      "price": 329,
+      "description": "A stylish smartwatch with fitness tracking and long battery life.",
+      "specification": ["GPS", "Heart Rate Monitor", "AMOLED Display"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "product_id": 11,
+      "product_title": "Fitbit Versa 4",
+      "product_image": "https://i.ibb.co.com/CsBtz22/smart-watch-2.jpg",
+      "category": "Smart Watch",
+      "price": 229,
+      "description": "A smartwatch focused on health and fitness tracking.",
+      "specification": [
+        "Heart Rate Tracking",
+        "Sleep Monitoring",
+        "Water Resistant"
+      ],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "product_id": 12,
+      "product_title": "Garmin Forerunner 265",
+      "product_image": "https://i.ibb.co.com/NpG7NRt/smart-watch-3.jpg",
+      "category": "Smart Watch",
+      "price": 499,
+      "description": "A premium smartwatch for runners and fitness enthusiasts.",
+      "specification": ["GPS Tracking", "Pulse Ox Sensor", "Multi-Sport Modes"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 13,
+      "product_title": "Apple MacBook Air M2",
+      "product_image": "https://i.ibb.co.com/S7xHSy3/macbook-1.jpg",
+      "category": "MacBook",
+      "price": 1199,
+      "description": "A lightweight laptop with powerful performance and long battery life.",
+      "specification": ["M2 Chip", "8GB RAM", "256GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 14,
+      "product_title": "Apple MacBook Pro 16-inch",
+      "product_image": "https://i.ibb.co.com/VJGy4kj/macbook-2.jpg",
+      "category": "MacBook",
+      "price": 2399,
+      "description": "A premium laptop with M2 Max chip for unparalleled performance.",
+      "specification": ["M2 Max Chip", "32GB RAM", "1TB SSD"],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 15,
+      "product_title": "Apple MacBook Pro 14-inch",
+      "product_image": "https://i.ibb.co.com/NTts7k9/macbook-3.jpg",
+      "category": "MacBook",
+      "price": 1999,
+      "description": "A compact and powerful laptop for professionals.",
+      "specification": ["M2 Pro Chip", "16GB RAM", "512GB SSD"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 16,
+      "product_title": "Sony WH-1000XM6 Headphones",
+      "product_image": "https://i.ibb.co.com/C8sgQCT/headphone-2.jpg",
+      "category": "Accessories",
+      "price": 399,
+      "description": "Industry-leading noise-canceling over-ear headphones with crystal-clear sound.",
+      "specification": [
+        "30 Hours Battery Life",
+        "Quick Charge",
+        "Bluetooth 5.2"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+
+    {
+      "product_id": 17,
+      "product_title": "Apple iPhone 14",
+      "product_image": "https://i.ibb.co.com/p31WPtT/iphone-1.jpg",
+      "category": "iPhone",
+      "price": 999,
+      "description": "The latest iPhone with A15 Bionic chip and advanced camera features.",
+      "specification": [
+        "128GB Storage",
+        "6.1-inch OLED Display",
+        "5G Connectivity"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 18,
+      "product_title": "iPhone 13",
+      "product_image": "https://i.ibb.co.com/6468zLJ/iphone-2.jpg",
+      "category": "iPhone",
+      "price": 799,
+      "description": "Sleek design with an A15 Bionic chip and advanced dual-camera system.",
+      "specification": [
+        "128GB Storage",
+        "6.1-inch Super Retina XDR Display",
+        "5G Connectivity"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 19,
+      "product_title": "iPhone 14 Pro",
+      "product_image": "https://example.com/images/iphone_14_pro.jpg",
+      "category": "iPhone",
+      "price": 999,
+      "description": "Professional-grade iPhone with Dynamic Island and exceptional performance.",
+      "specification": [
+        "256GB Storage",
+        "6.1-inch Super Retina XDR Display",
+        "A16 Bionic Chip"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 20,
+      "product_title": "real mi Air Ponds SE (3rd Gen)",
+      "product_image": "https://i.ibb.co.com/PCSR0ZD/airpond-1.png",
+      "category": "iPhone",
+      "price": 429,
+      "description": "Premium noise-canceling earbuds with personalized spatial audio..",
+      "specification": [
+        "Active Noise Cancellation",
+        "MagSafe Charging Case",
+        "Sweat and Water Resistance"
+      ],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "product_id": 21,
+      "product_title": "Apple AirPods Pro (2nd Gen)",
+      "product_image": "https://i.ibb.co.com/F5MFWSQ/airpond-2.jpg",
+      "category": "Accessories",
+      "price": 249,
+      "description": "Premium noise-canceling earbuds with personalized spatial audio.",
+      "specification": [
+        "Active Noise Cancellation",
+        "MagSafe Charging Case",
+        "Sweat and Water Resistance"
+      ],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "product_id": 22,
+      "product_title": "Sony WH-1000XM5 Headphones",
+      "product_image": "https://i.ibb.co.com/6sfJ7Yf/headphone-1.jpg",
+      "category": "Accessories",
+      "price": 399,
+      "description": "Industry-leading noise-canceling over-ear headphones with crystal-clear sound.",
+      "specification": [
+        "30 Hours Battery Life",
+        "Quick Charge",
+        "Bluetooth 5.2"
+      ],
+      "availability": true,
+      "rating": 4.9
+    },
+    {
+      "product_id": 23,
+      "product_title": "Anker Nano II 65W Charger",
+      "product_image": "https://i.ibb.co.com/4f7vfcm/charger-1.jpg",
+      "category": "Accessories",
+      "price": 59,
+      "description": "Compact fast charger for laptops, tablets, and phones.",
+      "specification": [
+        "65W USB-C Charger",
+        "Gallium Nitride (GaN) Technology",
+        "Compact Design"
+      ],
+      "availability": true,
+      "rating": 4.7
+    },
+    {
+      "product_id": 24,
+      "product_title": "Belkin 3-in-1 Wireless Charger",
+      "product_image": "https://i.ibb.co.com/ZXCBqKz/charger-2.jpg",
+      "category": "Accessories",
+      "price": 129,
+      "description": "Fast wireless charger for iPhone, Apple Watch, and AirPods.",
+      "specification": [
+        "15W Fast Charging",
+        "Qi-Certified",
+        "MagSafe Compatible"
+      ],
+      "availability": true,
+      "rating": 4.8
+    }
+  ]
+}
