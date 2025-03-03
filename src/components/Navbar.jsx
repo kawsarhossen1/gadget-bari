@@ -1,10 +1,10 @@
 import { CiShoppingCart, CiHeart } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <div className="border p-2 m-1 rounded-md">
+      <div className="border p-2 m-1 rounded-md ">
         <div className="bg-[#9538E2] rounded-md">
           <div className="navbar md:px-8 text-white">
             <div className="navbar-start">
@@ -29,20 +29,56 @@ const Navbar = () => {
                   tabIndex={0}
                   className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black"
                 >
-                  <Link to="/">Home</Link>
-                  <Link to="/statistics">Statistics</Link>
-                  <Link to="/dashboard">Dashboard</Link>
-                  <Link to="/new-arrival">New Arrival</Link>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `tab  ${isActive ? "text-warning" : "hover:text-warning"}`
+                    }
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `tab  ${isActive ? "text-warning" : "hover:text-warning"}`
+                    }
+                    to="/statistics"
+                  >
+                    Statistics
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `tab  ${isActive ? "text-warning" : "hover:text-warning"}`
+                    }
+                    to="/dashboard"
+                  >
+                    Dashboard
+                  </NavLink>
+                  <NavLink
+                    className={({ isActive }) =>
+                      `tab  ${isActive ? "text-warning" : "hover:text-warning"}`
+                    }
+                    to="/new-arrival"
+                  >
+                    New Arrival
+                  </NavLink>
                 </ul>
               </div>
               <a className=" text-xl">Gadget Bari</a>
             </div>
             <div className="navbar-center hidden lg:flex">
               <ul className="menu menu-horizontal px-1 gap-6">
-                <Link to="/">Home</Link>
-                <Link to="/statistics">Statistics</Link>
-                <Link to="/dashboard">Dashboard</Link>
-                <Link to="/new-arrival">New Arrival</Link>
+                <NavLink className={({ isActive }) =>
+                    `tab  ${isActive ? "bg-amber-200 rounded-md" : "hover:text-bold"}`
+                  } to="/">Home</NavLink>
+                <NavLink className={({ isActive }) =>
+                    `tab  ${isActive ? "bg-amber-200 rounded-md" : "hover:text-bold"}`
+                  } to="/statistics">Statistics</NavLink>
+                <NavLink className={({ isActive }) =>
+                    `tab  ${isActive ? "bg-amber-200 rounded-md" : "hover:text-bold"}`
+                  } to="/dashboard">Dashboard</NavLink>
+                <NavLink className={({ isActive }) =>
+                    `tab  ${isActive ? "bg-amber-200 rounded-md" : "hover:text-bold"}`
+                  } to="/new-arrival">New Arrival</NavLink>
               </ul>
             </div>
             <div className="navbar-end gap-4">

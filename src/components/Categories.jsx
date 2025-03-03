@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import ProductCards from "./ProductCards";
 
@@ -13,15 +13,15 @@ const Categories = ({ categories }) => {
       ))}
     </div> */}
       
-        <div className="mt-[491px] mb-10">
+        <div className="mt-[491px] mb-10 text-center">
           {categories.map((category) => (
-            <Link
-              className="p-4 ml-6 w-[192px] bg-[#09080F0D] my-4 pl-4 rounded-full font-medium text-[18px]  "
+            <NavLink
+              className={(isActive) => `tab  ml-4  bg-[#09080F0D] my-4  rounded-full font-medium text-[18px] ${isActive ? 'tab-active' : ''}`}
               key={category.category}
               to={`/category/${category.category}`}
             >
               {category.category}
-            </Link>
+            </NavLink>
           ))}
         </div>
         
