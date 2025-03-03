@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 
 const Card = ({ product }) => {
-  const { product_title, product_image, price, id } = product || {};
+  const { product_title, product_image, price, product_id } = product || {};
   return (
     <div className="flex relative mb-4 ">
       <Link
-        to={`/product/${id}`}
+        to={`/product/${product_id}`}
         className="transition hover:scale-105 shadow-xl rounded-xl overflow-hidden"
       >
         <figure className="w-full h-50 overflow-hidden">
