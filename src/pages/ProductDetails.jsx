@@ -7,10 +7,19 @@ const ProductDetails = () => {
   const data = useLoaderData();
   const { product_id } = useParams();
   const [product, setProduct] = useState({});
+  const [isWishlist, setIsWishlist] = useState(false);
+
   useEffect(() => {
     const singleData = data.find((product) => product.product_id == product_id);
     setProduct(singleData);
-  }, [product_id, data]);
+    const wishlists = getAllWishlists();
+    const isExist = wishlists.find(
+      (item) => item.product_id == product.product_id
+    );
+    if (isExist) {
+      setIsWishlist(true);
+    }
+  }, [product_id, data, product.product_id]);
   const {
     product_title,
     product_image,
@@ -21,8 +30,8 @@ const ProductDetails = () => {
   } = product;
 
   const handleWishlist = (product) => {
-    // addWishlist(product);
-    getAllWishlists()
+    addWishlist(product);
+    setIsWishlist(true);
   };
   return (
     <div className="flex gap-6 justify-center border border-[#FFFFFF] p-4 shadow-md  rounded-md my-6  ">
@@ -44,8 +53,9 @@ const ProductDetails = () => {
             Add To Card <FaCartShopping />
           </button>
           <button
+            disabled={isWishlist}
             onClick={() => handleWishlist(product)}
-            className="btn rounded-md text-xl shadow-md p-4 items-center "
+            className="btn bg-green-300 text-red-500 rounded-md text-xl shadow-md p-4 items-center "
           >
             <FaRegHeart />
           </button>

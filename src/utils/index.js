@@ -1,5 +1,7 @@
 //get all product to a local storage
 
+import toast from "react-hot-toast";
+
 const getAllWishlists = () => {
   const all = localStorage.getItem("wishlists");
 
@@ -17,7 +19,11 @@ const getAllWishlists = () => {
 const addWishlist = (product) => {
   //get all previously saved product data
 
-  const wishlists = [];
+  const wishlists = getAllWishlists();
+  const isExist = wishlists.find(item => item.product_id == product.product_id)
+  if(isExist) return toast.error('Item Already exists!');
+  toast.success('Successfully Added!');
+
   wishlists.push(product);
   localStorage.setItem("wishlists", JSON.stringify(wishlists));
 };
