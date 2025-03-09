@@ -7,10 +7,10 @@ const getAllWishlists = () => {
 
   if (all) {
     const wishlists = JSON.parse(all);
-    console.log(wishlists)
+    console.log(wishlists);
     return wishlists;
   } else {
-    console.log([])
+    console.log([]);
     return [];
   }
 };
@@ -20,14 +20,24 @@ const addWishlist = (product) => {
   //get all previously saved product data
 
   const wishlists = getAllWishlists();
-  const isExist = wishlists.find(item => item.product_id == product.product_id)
-  if(isExist) return toast.error('Item Already exists!');
-  toast.success('Successfully Added!');
+  const isExist = wishlists.find(
+    (item) => item.product_id == product.product_id
+  );
+  if (isExist) return toast.error("Item Already exists!");
+  
 
   wishlists.push(product);
   localStorage.setItem("wishlists", JSON.stringify(wishlists));
+  toast.success("Successfully Added!");
 };
 
 //remove a product to a local storage
+const removeWishlist = (product_id)=>{
+  const wishlists = getAllWishlists();
+  const remaining = wishlists.filter(product=> product.product_id != product_id)
+  localStorage.setItem("wishlists", JSON.stringify(remaining));
+  toast.success("Successfully Removed!");
+}
 
-export { addWishlist, getAllWishlists };
+
+export { addWishlist, getAllWishlists, removeWishlist };

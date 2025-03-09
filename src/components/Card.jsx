@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { FaTrash } from "react-icons/fa";
 
-const Card = ({ product }) => {
+const Card = ({ product, handleRemove }) => {
+  const { pathname } = useLocation();
+  console.log(pathname);
   const { product_title, product_image, price, product_id } = product || {};
   return (
     <div className="flex relative mb-4 ">
@@ -16,6 +19,11 @@ const Card = ({ product }) => {
           <p className="">${price}</p>
         </div>
       </Link>
+      {pathname === "/dashboard" && (
+        <div onClick={() => handleRemove(product_id)}  className="absolute p-3 -top-5 -right-5 bg-red-500 rounded-full text-white cursor-pointer">
+          <FaTrash size={20}/>
+        </div>
+      )}
     </div>
   );
 };
